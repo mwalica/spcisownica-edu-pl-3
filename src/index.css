@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth !important;
+  }
+  
+  @layer base {
+    body {
+      @apply text-gray-700;
+    }
+  
+    strong {
+      @apply font-semibold text-blue-800;
+    }
+  }
+  
+  @layer components {
+    .top-menu-item {
+      @apply font-medium leading-6 text-gray-800;
+    }
+  
+    .info-item-dt {
+      @apply text-base font-medium leading-6 text-gray-800;
+    }
+  
+    .info-item-dd {
+      @apply mt-1 text-base leading-6 sm:col-span-2 sm:mt-0;
+    }
+  
+    .par-1 {
+      @apply text-base indent-4 mb-4 leading-7;
+    }
+  }
