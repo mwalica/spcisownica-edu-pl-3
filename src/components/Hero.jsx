@@ -64,7 +64,7 @@ function Hero() {
 
 
                             {/* name of school */}
-                            <h1 className='text-center lg:text-left text-4xl font-semibold tracking-tight text-blue-600 sm:text-5xl drop-shadow-md sm:leading-[1.2]'>
+                            <h1 className='text-center lg:text-left text-4xl font-semibold tracking-tight text-blue-600 sm:text-5xl drop-shadow-md sm:leading-[1.5]'>
                                 Zespół Szkolno-Przedszkolny <br /><span className="text-blue-400 sm:text-5xl">w Cisownicy</span>
                             </h1>
                             <div className='mt-10 flex items-center justify-center lg:justify-start gap-x-6'>
