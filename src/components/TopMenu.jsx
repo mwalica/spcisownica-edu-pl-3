@@ -197,7 +197,7 @@ const TopMenu = () => {
                         </Transition>
                     </Popover>
                     <Popover className='relative'>
-                        <Popover.Button className='flex items-center gap-x-1 top-menu-item'>Przedszkole Cisownica
+                        <Popover.Button className='flex items-center gap-x-1 top-menu-item'>Przedszkole Równia
                             <ChevronDownIcon
                                 className='h-5 w-5 flex-none text-gray-400'
                                 aria-hidden='true'

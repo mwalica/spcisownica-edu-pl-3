@@ -29,12 +29,12 @@ function CardItem({ post }) {
 
                 <div className="flex-1">
 
-                    <a href={post.title} className="mt-2 block">
+                    <div className="mt-2 block">
                         <p className="text-xl font-normal uppercase text-pink-500">{post.title}</p>
                         <div className="mt-3 text-base">
                             <ReactMarkdown>{startText}</ReactMarkdown>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <div className="flex justify-end mt-2">
