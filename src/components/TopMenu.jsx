@@ -51,17 +51,16 @@ function classNames(...classes) {
 const TopMenu = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const { pathname } = useResolvedPath()
-    console.log(pathname)
 
     const scrollPosition = useScrollPosition()
     console.log(scrollPosition)
 
     return (
-        <header className={`sticky top-0 z-40 transition-shadow ${scrollPosition > 0 || pathname !== "/" ? "bg-white opacity-95 shadow shadow-gray-200" : "bg-transparent shadow-none"}`}>
+        <header className={`sticky top-0 z-50 transition-shadow ${scrollPosition > 0 || pathname !== "/" ? "bg-white opacity-95 shadow shadow-gray-200" : "bg-transparent shadow-none"}`}>
             <TopBar />
             {/* start nav */}
             <nav
-                className=' mx-auto flex max-w-7xl items-center justify-between py-6 px-4'
+                className=' mx-auto flex max-w-7xl items-center justify-between p-6 px-2'
                 aria-label='Global'
             >
                 {/* mobile open button */}
@@ -198,7 +197,7 @@ const TopMenu = () => {
                         </Transition>
                     </Popover>
                     <Popover className='relative'>
-                        <Popover.Button className='flex items-center gap-x-1 top-menu-item'>Przedszkole Równia
+                        <Popover.Button className='flex items-center gap-x-1 top-menu-item'>Przedszkole Cisownica
                             <ChevronDownIcon
                                 className='h-5 w-5 flex-none text-gray-400'
                                 aria-hidden='true'
@@ -253,7 +252,7 @@ const TopMenu = () => {
                 onClose={setMobileMenuOpen}
             >
                 <div className='fixed inset-0 z-10' />
-                <Dialog.Panel className='fixed inset-y-0 right-0 z-100 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+                <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
                     {/* close icon */}
                     <div className='flex items-center justify-end'>
                         <button
@@ -270,10 +269,16 @@ const TopMenu = () => {
                     <div className='mt-6 flow-root'>
                         <div className='-my-6 divide-y divide-gray-500/10'>
                             <div className='space-y-2 py-6'>
+                                <Link
+                                    to='/'
+                                    className='mobile-top-menu-item'
+                                >
+                                    Home
+                                </Link>
                                 <Disclosure as='div' className='-mx-3'>
                                     {({ open }) => (
                                         <>
-                                            <Disclosure.Button className='flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50'>
+                                            <Disclosure.Button className='mobile-top-menu-item-2'>
                                                 Informacje
                                                 <ChevronDownIcon
                                                     className={classNames(
@@ -290,7 +295,38 @@ const TopMenu = () => {
                                                         key={item.name}
                                                         as={Link}
                                                         to={item.href}
-                                                        className='block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-800 hover:bg-gray-50'
+                                                        className='mobile-top-menu-item-3'
+                                                    >
+                                                        {item.name}
+                                                    </Disclosure.Button>
+                                                ))}
+                                            </Disclosure.Panel>
+                                        </>
+                                    )}
+                                </Disclosure>
+
+                                {/* rodzice */}
+                                <Disclosure as='div' className='-mx-3'>
+                                    {({ open }) => (
+                                        <>
+                                            <Disclosure.Button className='mobile-top-menu-item-2'>
+                                                Rodzice
+                                                <ChevronDownIcon
+                                                    className={classNames(
+                                                        open ? "rotate-180" : "",
+                                                        "h-5 w-5 flex-none text-gray-400"
+                                                    )}
+                                                    aria-hidden='true'
+                                                />
+                                            </Disclosure.Button>
+
+                                            <Disclosure.Panel className='mt-2 space-y-2'>
+                                                {parents.map((item) => (
+                                                    <Disclosure.Button
+                                                        key={item.name}
+                                                        as={Link}
+                                                        to={item.href}
+                                                        className='mobile-top-menu-item-3'
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
@@ -301,42 +337,87 @@ const TopMenu = () => {
                                 </Disclosure>
 
                                 <Link
-                                    to='/'
-                                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                                >
-                                    Rodzice
-                                </Link>
-                                <Link
-                                    to='/'
-                                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                                    to='/events'
+                                    className='mobile-top-menu-item'
                                 >
                                     Wydarzenia
                                 </Link>
                                 <Link
-                                    to='/'
-                                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                                    to='/documents'
+                                    className='mobile-top-menu-item'
                                 >
                                     Dokumenty
                                 </Link>
-                                <Link
-                                    to='/'
-                                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                                >
-                                    Przedszkole Cisownica
-                                </Link>
-                                <Link
-                                    to='/'
-                                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                                >
-                                    Przedszkole Równia
-                                </Link>
+                                {/* przedszkole cisownica */}
+                                <Disclosure as='div' className='-mx-3'>
+                                    {({ open }) => (
+                                        <>
+                                            <Disclosure.Button className='mobile-top-menu-item-2'>
+                                                Przedszkole Cisownica
+                                                <ChevronDownIcon
+                                                    className={classNames(
+                                                        open ? "rotate-180" : "",
+                                                        "h-5 w-5 flex-none text-gray-400"
+                                                    )}
+                                                    aria-hidden='true'
+                                                />
+                                            </Disclosure.Button>
+
+                                            <Disclosure.Panel className='mt-2 space-y-2'>
+                                                {preschoolCis.map((item) => (
+                                                    <Disclosure.Button
+                                                        key={item.name}
+                                                        as={Link}
+                                                        to={item.href}
+                                                        className='mobile-top-menu-item-3'
+                                                    >
+                                                        {item.name}
+                                                    </Disclosure.Button>
+                                                ))}
+                                            </Disclosure.Panel>
+                                        </>
+                                    )}
+                                </Disclosure>
+
+                                {/* przedszkole Rownia */}
+                                <Disclosure as='div' className='-mx-3'>
+                                    {({ open }) => (
+                                        <>
+                                            <Disclosure.Button className='mobile-top-menu-item-2'>
+                                                Przedszkole Równia
+                                                <ChevronDownIcon
+                                                    className={classNames(
+                                                        open ? "rotate-180" : "",
+                                                        "h-5 w-5 flex-none text-gray-400"
+                                                    )}
+                                                    aria-hidden='true'
+                                                />
+                                            </Disclosure.Button>
+
+                                            <Disclosure.Panel className='mt-2 space-y-2'>
+                                                {preschoolRow.map((item) => (
+                                                    <Disclosure.Button
+                                                        key={item.name}
+                                                        as={Link}
+                                                        to={item.href}
+                                                        className='mobile-top-menu-item-3'
+                                                    >
+                                                        {item.name}
+                                                    </Disclosure.Button>
+                                                ))}
+                                            </Disclosure.Panel>
+                                        </>
+                                    )}
+                                </Disclosure>
                             </div>
                             <div className='py-6'>
                                 <a
-                                    href='#'
-                                    className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                                    href='https://spcisownica.admin.datocms.com'
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className='mobile-top-menu-item'
                                 >
-                                    Log in
+                                    Logowanie
                                 </a>
                             </div>
                         </div>

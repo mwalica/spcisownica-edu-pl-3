@@ -3,33 +3,45 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+@layer base {
+  body {
+    @apply text-gray-700;
   }
-  
-  @layer base {
-    body {
-      @apply text-gray-700;
-    }
-  
-    strong {
-      @apply font-semibold text-blue-800;
-    }
+
+  strong {
+    @apply font-semibold text-blue-800;
   }
-  
-  @layer components {
-    .top-menu-item {
-      @apply font-medium leading-6 text-gray-800;
-    }
-  
-    .info-item-dt {
-      @apply text-base font-medium leading-6 text-gray-800;
-    }
-  
-    .info-item-dd {
-      @apply mt-1 text-base leading-6 sm:col-span-2 sm:mt-0;
-    }
-  
-    .par-1 {
-      @apply text-base indent-4 mb-4 leading-7;
-    }
+}
+
+@layer components {
+  .top-menu-item {
+    @apply font-medium leading-6 text-gray-800;
   }
+
+  .mobile-top-menu-item {
+    @apply -mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-gray-800 hover:bg-gray-50;
+  }
+
+  .mobile-top-menu-item-2 {
+    @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-medium leading-7 text-gray-800 hover:bg-gray-50;
+  }
+
+  .mobile-top-menu-item-3 {
+    @apply block rounded-lg py-2 pl-6 pr-3 text-sm font-medium leading-7 text-gray-800 hover:bg-gray-50;
+  }
+
+  .info-item-dt {
+    @apply text-base font-medium leading-6 text-gray-800;
+  }
+
+  .info-item-dd {
+    @apply mt-1 text-base leading-6 sm:col-span-2 sm:mt-0;
+  }
+
+  .par-1 {
+    @apply text-base indent-4 mb-4 leading-7;
+  }
+}
