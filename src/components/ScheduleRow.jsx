@@ -8,29 +8,29 @@ const tabs = [
 ]
 
 const schedule1 = [
-    { id: "1", time: "8.00 - 8.30", description: "Schodzenie się dzieci do przedszkola" },
-    { id: "2", time: "8.00 - 9.00", description: "Zabawy dowolne służące realizacji pomysłów dzieci (układanki, puzzle, kolorowanki, rysowanie, klocki, zabawy tematyczne, inne…)" },
-    { id: "3", time: "9.00 - 9.10", description: "Prace porządkowe" },
-    { id: "4", time: "9.10 - 9.40", description: "Powitanie. Przeliczanie dzieci. Omawianie pogody, określanie pory roku, miesiąca, dnia tygodnia, pory dnia. Zabawy integrujące. Ćwiczenia poranne" },
-    { id: "5", time: "9.40 - 10.00", description: "Przygotowanie do śniadania. Dbanie o higienę. Mycie rąk, toaleta" },
-    { id: "6", time: "10.00 - 10.30", description: "Śniadanie. Wdrażanie zasad kulturalnego zachowywania się podczas posiłku" },
-    { id: "7", time: "10.30 - 10.45", description: "Odpoczynek. Relaks przy muzyce" },
-    { id: "8", time: "10.45 - 11.45", description: "Realizacja zdań edukacyjnych z całą grupą" },
-    { id: "9", time: "11.45 - 12.15", description: "Zabawy dowolne w sali, zgodne z zainteresowaniem dzieci. Porządkowanie sali." },
-    { id: "10", time: "12.15 - 13.00", description: "Spacery. Zabawy ruchowe na świeżym powietrzu, obserwacje przyrodnicze. Dostrzeganie zmian zachodzących w przyrodzie. Rozchodzenie się dzieci do domu." },
+    { id: "1", time: "6.30 - 8.00", description: "Schodzenie się dzieci. Zabawy dowolne wg zainteresowań - manipulacyjne, konstrukcyjne, tematyczne, dydaktyczne, inne – służące realizacji pomysłów dzieci." },
+    { id: "2", time: "8.00 - 8.30", description: "Przywitanie w kręgu. Zabawy integrujące grupę, zabawy ruchowe w kole, ćwiczenia poranne." },
+    { id: "3", time: "8.30 - 9.00", description: "Śniadanie. Czynności związane z higieną osobistą." },
+    { id: "4", time: "9.00 - 10.00", description: "Zajęcia dydaktyczne będące realizacją wybranych treści z programu wychowania przedszkolnego , uwzględniające różne rodzaje aktywności: słowną, muzyczną, plastyczną, matematyczną, badawczą." },
+    { id: "5", time: "10.00 - 10.30", description: "Drugie śniadanie. Czynności związane z higieną osobistą." },
+    { id: "6", time: "10.30 - 12.00", description: "Zabawy w ogrodzie przedszkolnym, na boisku, placu zabaw. Obserwacje przyrodnicze, spacery i zajęcia w terenie." },
+    { id: "7", time: "12.00 - 12.30", description: "Obiad. Czynności związane z higieną osobistą." },
+    { id: "8", time: "12.30 - 14.00", description: "Odpoczynek po obiedzie- słuchanie muzyki relaksacyjnej, słuchanie bajek literackich." },
+    { id: "9", time: "14.00 - 14.30", description: "Podwieczorek. Czynności związane z higieną osobistą." },
+    { id: "10", time: "14.30 - 16.30", description: "Zabawy dowolne według zainteresowań; Zabawy i ćwiczenia ruchowe w ogrodzie przedszkolnym (lub na sali). Odbiór dzieci." },
 ]
 
 const schedule2 = [
-    { id: "1", time: "8.00 - 8.30", description: "Schodzenie się dzieci do przedszkola. Oznaczanie się na liście obecności" },
-    { id: "2", time: "8.00 - 8.50", description: "Zabawy dowolne służące realizacji pomysłów dzieci (manipulacyjne, konstrukcyjne, tematyczne, dydaktyczne, inne). Indywidualna pomoc wspomagająca rozwój dziecka, ćwiczenia ogólnorozwojowe" },
-    { id: "3", time: "8.50 - 9.00", description: "Prace porządkowe" },
-    { id: "4", time: "9.00 - 9.45", description: "Przywitanie w kręgu. Przeliczanie dzieci. Określanie pory roku, miesiąca, dnia tygodnia, pory dnia. Omawianie pogody. Określanie swojego samopoczucia. Rozmowa swobodna. Gimnastyka buzi i języka. Wybrane zabawy integrujące grupę" },
-    { id: "5", time: "9.45 - 10.15", description: "Zabawy i ćwiczenia muzyczno - ruchowe" },
-    { id: "6", time: "10.15 - 10.30", description: "Przygotowanie do śniadania, dbanie o higienę" },
-    { id: "7", time: "10.30 - 11.00", description: "Śniadanie. Wdrażanie zasad kulturalnego zachowywania się podczas posiłku." },
-    { id: "8", time: "11.00 - 11.15", description: "Odpoczynek po śniadaniu, <em>Czas z książką</em>." },
-    { id: "9", time: "11.15 - 12.00", description: "Realizacja zadań edukacyjnych poprzez zajęcia z całą grupą. Podsumowanie dnia w kręgu" },
-    { id: "10", time: "12.00 - 13.00", description: "Spacery, zabawy ruchowe na powietrzu, obserwacje przyrodnicze, zabawy dowolne na placu przedszkolnym" },
+    { id: "1", time: "6.30 - 8.00", description: "Schodzenie się dzieci. Zabawy dowolne wg zainteresowań dzieci - manipulacyjne, konstrukcyjne, tematyczne, dydaktyczne, inne - służące realizacji pomysłów dzieci. Indywidualne wspomaganie i korygowanie rozwoju, praca z dzieckiem uzdolnionym" },
+    { id: "2", time: "8.00 - 8.30", description: "Przywitanie w kręgu. Realizacja zadań edukacyjnych i wychowawczych poprzez zajęcia z całą grupą. Zestaw ćwiczeń porannych. Ćwiczenia muzyczno-ruchowe." },
+    { id: "3", time: "8.30 - 9.00", description: "Śniadanie. Czynności związane z higieną osobistą." },
+    { id: "4", time: "9.00 - 10.30", description: "Realizacja zadań edukacyjnych poprzez zajęcia z całą grupą. Zabawy podejmowane z inicjatywy dzieci, manipulacyjne, konstrukcyjne, tematyczne, dydaktyczne, inne. Indywidualne wspomaganie i korygowanie rozwoju, praca z dzieckiem uzdolnionym. Drugie śniadanie." },
+    { id: "5", time: "10.30 - 12.00", description: "Zabawy w ogrodzie przedszkolnym, na boisku, placu zabaw. Obserwacje przyrodnicze, spacery i zajęcia w terenie." },
+    { id: "6", time: "12.00 - 12.30", description: "Obiad. Czynności związane z higieną osobistą." },
+    { id: "7", time: "12.30 - 13.00", description: "Ćwiczenia relaksacyjne, słuchanie bajek, ćwiczenia grafomotoryczne. Zajęcia indywidualne z dziećmi, dostosowane do ich możliwości i potrzeb." },
+    { id: "8", time: "13.00 - 14.00", description: "Zabawy i ćwiczenia ruchowe w ogrodzie przedszkolnym (lub na sali). Praca w kąciku przyrody, obserwacje przyrodnicze." },
+    { id: "9", time: "14.00 - 14.30", description: "Podwieczorek. Czynności związane z higieną osobistą." },
+    { id: "10", time: "14.30 - 16.30", description: "Zabawy integrujące grupę, zabawy tematyczne, wg zainteresowań; Zabawy dydaktyczne, ćwiczenia graficzne, plastyczne, muzyczne. Praca indywidualna lub w małych zespołach. Odbiór dzieci." },
 ]
 
 function classNames(...classes) {

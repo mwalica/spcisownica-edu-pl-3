@@ -48,9 +48,7 @@ function InfoRowPage() {
                                 <dt className='info-item-dt'>Realizowany program</dt>
                                 <dd className='info-item-dd'>
                                     <strong>Rozwój - wychowanie - edukacja. Program wychowania przedszkolnego.</strong><br />
-                                    Anna Stalmach - Tkacz, Karina Mucha , Nowa Era<br />
-                                    <strong>Program wychowania przedszkolnego Wokół Przedszkola</strong><br />
-                                    Małgorzata Kwaśniewska, Joanna Lendzion, Wiesława Żaba-Żabińska, MAC Edukacja
+                                    Anna Stalmach - Tkacz, Karina Mucha , Nowa Era
                                 </dd>
                             </div>
                         </dl>

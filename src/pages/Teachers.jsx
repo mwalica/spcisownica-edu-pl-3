@@ -24,14 +24,22 @@ const teachers = [
     { name: "Agnieszka Macha", role: "język niemiecki, nauczyciel wspomagający" },
     { name: "Marek Walica", role: "informatyka" },
     { name: "Andrzej Kloske", role: "doradztwo zawodowe" },
-    { name: "Joanna Biela", role: "psycholog szkolny (urlop)" },
+    { name: "Agata Gwóźdź", role: "psycholog szkolny" },
     { name: "Magdalena Dziendziel", role: "historia, wos" },
     { name: "Paweł Burzawa", role: "fizyka" },
     { name: "Małgorzata Szklorz", role: "chemia" },
     { name: "Monika Droździk", role: "język polski, edukacja dla bezpieczeństwa" },
-    { name: "Jadwiga Pipień", role: "matematyka" },
     { name: "Samuel Gogółka", role: "religia, technika" },
     { name: "Paweł Dobrucki", role: "plastyka" },
+    { name: "Wiesława Machalica", role: "wychowawca oddziału przedszkolnego" },
+    { name: "Elżbieta Wójcik", role: "wychowawca oddziału przedszkolnego" },
+    { name: "Renata Stanieczek", role: "wychowawca przedszkola" },
+    { name: "Gabriela Sliwka", role: "wychowawca przedszkola" },
+    { name: "Justyna Smolik", role: "wychowawca przedszkola" },
+    { name: "Arleta Maly", role: "wychowawca przedszkola" },
+    { name: "Dorota Somerlik", role: "nauczyciel wspomagający" },
+    { name: "Klaudia Holisz", role: "nauczanie zintegrowane" },
+    { name: "Weronika Dąbrowiecka", role: "geografia, matematyka" }
 ]
 
 function TeachersPage() {

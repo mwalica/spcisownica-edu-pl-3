@@ -49,7 +49,7 @@ function AdvicePsychologistPage() {
                                     className="w-2/3 border-8 shadow-lg border-white"
                                 />
                                 <img
-                                    src={img3}
+                                    src={img4}
                                     alt="rady psychologa"
                                     className="w-2/3 border-8 shadow-lg border-white"
                                 />

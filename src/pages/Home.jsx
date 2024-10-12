@@ -5,6 +5,7 @@ import { getNotices, getPosts } from "../utils/getData"
 import Hero from "../components/Hero"
 import NoticesList from "../components/NoticesList"
 import Cards from "../components/Cards"
+import { Link } from "react-router-dom"
 
 
 const HomePage = () => {
@@ -18,8 +19,6 @@ const HomePage = () => {
         <>
             <Hero />
             <div><NoticesList notices={notices.data.allNotices} /></div>
-
-
             <Cards posts={posts.data.allBlogs} />
         </>
     )
