@@ -22,7 +22,7 @@ const generalDocuments = [
     name: "Informacja o przetwarzaniu danych",
     url: `${
       import.meta.env.VITE_SITE_DOMAIN
-    }/przetwarzanie_danych_osobowych.pdf`,
+    }/dokumenty/przetwarzanie_danych_osobowych.pdf`,
   },
   {
     name: "Standardy ochrony małoletnich",
