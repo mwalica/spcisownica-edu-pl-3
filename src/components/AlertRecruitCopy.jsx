@@ -6,19 +6,36 @@ const content = [
         id: 1,
         activity:
             "Przyjmowanie zgłoszeń",
-        date1: "od 10 marca 2025 r. do 21 marca 2025 r."
+        date1: "od 10 marca 2025r. do 21 marca 2025r.",
+        date2: "od 27 maja 2024r. do 03 czerwca 2024r.",
     },
     {
         id: 2,
         activity:
-            "Podanie do publicznej wiadomości przez komisję rekrutacyjną listy kandydatów zakwalifikowanych do 1 klasy",
-        date1: "23 kwietnia 2025 r."
+            "Weryfikacja przez komisję rekrutacyjną wniosków o przyjęcie do szkoły oraz dokumentów potwierdzających spełnianie przez kandydata warunków lub kryteriów branych pod uwagę w postępowaniu rekrutacyjnym.",
+        date1: "od 25 marca 2024r. do 05 kwietnia 2024r.",
+        date2: "od 4 czerwca 2024r. do 7 czerwca 2024r.",
     },
     {
         id: 3,
         activity:
-            "Potwierdzenie przez rodzica kandydata woli przyjęcia",
-        date1: "od 24 kwietnia 2025 r. do 30 kwietnia 2025 r.",
+            "Podanie do publicznej wiadomości przez komisję rekrutacyjną listy kandydatów zakwalifikowanych i kandydatów niezakwalifikowanych.",
+        date1: "22 kwietnia 2024r.",
+        date2: "14 czerwca 2024r.",
+    },
+    {
+        id: 4,
+        activity:
+            "Potwierdzenie przez rodzica kandydata woli przyjęcia w postaci pisemnego oświadczenia.",
+        date1: "od 23 kwietnia 2024r. do 29 kwietnia 2024r.",
+        date2: "od 17 czerwca 2024r. do 20 czerwca 2024r.",
+    },
+    {
+        id: 5,
+        activity:
+            "Podanie do publicznej wiadomości przez komisję rekrutacyjną listy kandydatów przyjętych i kandydatów nieprzyjętych.",
+        date1: "7 maja 2024r.",
+        date2: "21 czerwca 2024r.",
     },
 ];
 
@@ -65,14 +82,12 @@ function AlertRecruit({open, onClose}) {
                                             className="text-base text-center font-semibold leading-6 text-gray-900"
                                         >
                                             Harmonogram rekrutacji do klasy 1 Szkoły Podstawowej w
-                                            Cisownicy na rok szkolny 2025/2026
+                                            Cisownicy na rok szkolny 2024/2025
                                         </Dialog.Title>
-                                        <p className="py-2">Rozpoczynamy rekrutacja do klasy 1. Dokumenty do pobrania związane z rekrutacją:
-                                        <ul>
-                                            <li><a href="https://spcisownica.edu.pl/dokumenty/zgloszenie_obwod_2526.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">zgłoszenie dla ucznia z obwodu</a></li>
-                                            <li><a href="https://spcisownica.edu.pl/dokumenty/wniosek_spoza_obwod_2526.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">wniosek dla ucznia spoza obwodu</a></li>
-                                        </ul>
-                                        </p>
+                                        <p>Rozpoczynamy rekrutacja do klasy 1. Zgłoszenie przyjmowane są od 10 marca do 21
+                                            marca. Lista osób zakwalifikowanych będzie 23 kwietnia. Potwierdzenie woli
+                                            przyjęcia os 24 kwietnia do 30 kwietnia. Jeśli może to Pan jeszcze jakoś
+                                            fajnie zredagować i dołączyć te dwa załączniki. </p>
                                         {/* table */}
                                         <div className="px-4 sm:px-6 lg:px-8">
                                             <div className="mt-8 flow-root">
@@ -100,6 +115,12 @@ function AlertRecruit({open, onClose}) {
                                                                 >
                                                                     Terminy w postępowaniu rekrutacyjnym
                                                                 </th>
+                                                                <th
+                                                                    scope="col"
+                                                                    className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                                                                >
+                                                                    Terminy w postępowaniu uzupełniającym
+                                                                </th>
                                                             </tr>
                                                             </thead>
                                                             <tbody className="divide-y divide-gray-200">
@@ -113,6 +134,9 @@ function AlertRecruit({open, onClose}) {
                                                                     </td>
                                                                     <td className="px-3 py-4 text-sm text-blue-800">
                                                                         {item.date1}
+                                                                    </td>
+                                                                    <td className="px-3 py-4 text-sm text-blue-800">
+                                                                        {item.date2}
                                                                     </td>
                                                                 </tr>
                                                             ))}

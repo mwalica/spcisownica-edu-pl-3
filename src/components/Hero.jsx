@@ -89,18 +89,28 @@ function Hero() {
                                 <span className="text-blue-400 sm:text-5xl">w Cisownicy</span>
                             </h1>
                             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
-                                <a
-                                    href="#notices"
+                                {/*<a*/}
+                                {/*    href="#notices"*/}
+                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
+                                {/*>*/}
+                                {/*    Ogłoszenia*/}
+                                {/*</a>*/}
+                                {/*<Link*/}
+                                {/*    to="/documents"*/}
+                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
+                                {/*>*/}
+                                {/*    Dokumenty*/}
+                                {/*</Link>*/}
+                                {/* button show alertRecruit */}
+                                <button
+                                    onClick={onShowRecruit}
+                                    type="button"
                                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
-                                    Ogłoszenia
-                                </a>
-                                <Link
-                                    to="/documents"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Dokumenty
-                                </Link>
+                                    Rekrutacja Klasa 1
+                                </button>
+                                <AlertRecruit open={openRecruit} onClose={onCloseRecruit}/>
+                                {/* end show alertRecruit */}
                                 <a
                                     href="https://naborp-kandydat.vulcan.net.pl/gminagoleszow/Candidates/Add"
                                     target="_blank"
@@ -119,16 +129,6 @@ function Hero() {
                                 </button>
                                 <Alert open={open} onClose={onClose}/>
                                 {/* end show alert */}
-                                {/* button show alertRecruit */}
-                                {/* <button
-                  onClick={onShowRecruit}
-                  type="button"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Rekrutacja Klasa 1
-                </button>
-                <AlertRecruit open={openRecruit} onClose={onCloseRecruit} /> */}
-                                {/* end show alertRecruit */}
                                 {/*<a*/}
                                 {/*    href="https://uonetplus.vulcan.net.pl/gminagoleszow"*/}
                                 {/*    target="_blank"*/}
