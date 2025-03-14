@@ -91,12 +91,12 @@ function Alert({open, onClose}) {
                                         </p>
                                         <p className="py-2">
                                             W poniedziałek, <strong>03.03.2025r.</strong> będzie można za pośrednictwem
-                                            strony:<br />
+                                            strony:<br/>
                                             <a href="https://naborp-kandydat.vulcan.net.pl/gminagoleszow/Candidates/Add"
                                                target="_blank"
                                                rel="noreferrer"
-                                            className="text-red-600">
-                                                https://naborp-kandydat.vulcan.net.pl/gminagoleszow/Candidates/Add</a>,<br />
+                                               className="text-red-600">
+                                                https://naborp-kandydat.vulcan.net.pl/gminagoleszow/Candidates/Add</a>,<br/>
                                             przejść
                                             do platformy logowania „Nabór VULCAN” – dostęp zostanie uruchomiony o
                                             godzinie 8.00. Od tego momentu będzie można składać wnioski o przyjęcie
@@ -105,9 +105,20 @@ function Alert({open, onClose}) {
                                             przedszkola. Rekrutacja trwa do <strong>17.03.2025r</strong>.
                                         </p>
                                         <p className="py-2">
-                                            Informację o szczegółowych warunkach naboru można będzie pobrać ze strony <a className="text-red-600" href="https://www.goleszów.pl">www.goleszow.pl</a> lub ze stron internetowych placówek oświatowych, które
+                                            Informację o szczegółowych warunkach naboru można będzie pobrać ze strony <a
+                                            className="text-red-600"
+                                            href="https://www.goleszów.pl">www.goleszow.pl</a> lub ze stron
+                                            internetowych placówek oświatowych, które
                                             prowadzić będą nabór.
 
+                                        </p>
+                                        <p className="py-2">
+                                            Regulamin rekrutacji:&nbsp;
+                                            <a
+                                                className="text-red-600"
+                                                href="https://spcisownica.edu.pl/dokumenty/regulamin_rekrutacji_przedszkole_26.pdf"
+                                                target="_blank"
+                                                rel="noreferrer">Regulamin rekrutacji dzieci do przedszkola</a>
                                         </p>
                                         {/* table */}
                                         <div className="px-4 sm:px-6 lg:px-8">

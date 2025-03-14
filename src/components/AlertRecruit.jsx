@@ -71,6 +71,7 @@ function AlertRecruit({open, onClose}) {
                                         <ul>
                                             <li><a href="https://spcisownica.edu.pl/dokumenty/zgloszenie_obwod_2526.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">zgłoszenie dla ucznia z obwodu</a></li>
                                             <li><a href="https://spcisownica.edu.pl/dokumenty/wniosek_spoza_obwod_2526.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">wniosek dla ucznia spoza obwodu</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/regulamin_rekrutacji_szkola_26.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">regulamin rekrutacji dzieci do klasy pierwszej</a></li>
                                         </ul>
                                         </p>
                                         {/* table */}
