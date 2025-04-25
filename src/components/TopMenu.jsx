@@ -32,6 +32,7 @@ const parents = [
 
 const projects = [
     {name: "Aktywna tablica", href: "active-board"},
+    {name: "Aktywny do kwadratu", href: "active-power"},
     {name: "Narodowy Program Rozwoju Czytelnictwa", href: "books"},
     {name: "Projekt szkolny", href: "projects-school"},
     {name: "Projekt przedszkolny", href: "projects-preschool"},
@@ -333,6 +334,7 @@ const TopMenu = () => {
                                 <Link
                                     to='/'
                                     className='mobile-top-menu-item'
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Home
                                 </Link>
@@ -357,6 +359,7 @@ const TopMenu = () => {
                                                         as={Link}
                                                         to={item.href}
                                                         className='mobile-top-menu-item-3'
+                                                        onClick={() => setMobileMenuOpen(false)}
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
@@ -388,6 +391,7 @@ const TopMenu = () => {
                                                         as={Link}
                                                         to={item.href}
                                                         className='mobile-top-menu-item-3'
+                                                        onClick={() => setMobileMenuOpen(false)}
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
@@ -400,12 +404,14 @@ const TopMenu = () => {
                                 <Link
                                     to='/events'
                                     className='mobile-top-menu-item'
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Wydarzenia
                                 </Link>
                                 <Link
                                     to='/documents'
                                     className='mobile-top-menu-item'
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Dokumenty
                                 </Link>
@@ -432,6 +438,7 @@ const TopMenu = () => {
                                                         as={Link}
                                                         to={item.href}
                                                         className='mobile-top-menu-item-3'
+                                                        onClick={() => setMobileMenuOpen(false)}
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
@@ -462,6 +469,7 @@ const TopMenu = () => {
                                                         as={Link}
                                                         to={item.href}
                                                         className='mobile-top-menu-item-3'
+                                                        onClick={() => setMobileMenuOpen(false)}
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
@@ -493,6 +501,7 @@ const TopMenu = () => {
                                                         as={Link}
                                                         to={item.href}
                                                         className='mobile-top-menu-item-3'
+                                                        onClick={() => setMobileMenuOpen(false)}
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>

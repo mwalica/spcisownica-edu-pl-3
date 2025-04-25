@@ -32,7 +32,7 @@ return (
                         <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
                             <dt className='info-item-dt'>Inspektor Ochrony Danych</dt>
                             <dd className='info-item-dd font-medium'>
-                                Paulina Jochacy
+                                Anna Romik
                             </dd>
                         </div>
                         <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>

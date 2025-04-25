@@ -35,6 +35,7 @@ import ProjectsSchoolPage from "./pages/ProjectsSchool.jsx";
 import ProjectsPreschoolPage from "./pages/ProjectsPreschool.jsx";
 import ActiveBoardPage from "./pages/ActiveBoard.jsx";
 import BooksProgramPage from "./pages/BooksProgram.jsx";
+import ActivePowerPage from "./pages/ActivePower.jsx";
 
 const router = createBrowserRouter([
     {
@@ -73,6 +74,7 @@ const router = createBrowserRouter([
             {path: "projects-school", element: <ProjectsSchoolPage/>},
             {path: "projects-preschool", element: <ProjectsPreschoolPage/>},
             {path: "active-board", element: <ActiveBoardPage/>},
+            {path: "active-power", element: <ActivePowerPage/>},
             {path: "books", element: <BooksProgramPage/>},
             {path: "preschool-cis/info", element: <InfoPage/>},
             {path: "preschool-cis/events", element: <EventsCisPage/>, loader: eventsCisLoader},
