@@ -89,12 +89,12 @@ function Hero() {
                                 <span className="text-blue-400 sm:text-5xl">w Cisownicy</span>
                             </h1>
                             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
-                                {/*<a*/}
-                                {/*    href="#notices"*/}
-                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
-                                {/*>*/}
-                                {/*    Ogłoszenia*/}
-                                {/*</a>*/}
+                                <a
+                                    href="#notices"
+                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                    Ogłoszenia
+                                </a>
                                 {/*<Link*/}
                                 {/*    to="/documents"*/}
                                 {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
@@ -102,63 +102,57 @@ function Hero() {
                                 {/*    Dokumenty*/}
                                 {/*</Link>*/}
                                 {/* button show alertRecruit */}
-                                <button
-                                    onClick={onShowRecruit}
-                                    type="button"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Rekrutacja Klasa 1
-                                </button>
-                                <AlertRecruit open={openRecruit} onClose={onCloseRecruit}/>
+                                {/*<button*/}
+                                {/*    onClick={onShowRecruit}*/}
+                                {/*    type="button"*/}
+                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
+                                {/*>*/}
+                                {/*    Rekrutacja Klasa 1*/}
+                                {/*</button>*/}
+                                {/*<AlertRecruit open={openRecruit} onClose={onCloseRecruit}/>*/}
                                 {/* end show alertRecruit */}
-                                <a
-                                    href="https://naborp-kandydat.vulcan.net.pl/gminagoleszow/Candidates/Add"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Rekrutacja do przedszkoli
-                                </a>
-                                {/* button show alert */}
-                                <button
-                                    onClick={onShow}
-                                    type="button"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Harmonogram - przedszkola
-                                </button>
-                                <Alert open={open} onClose={onClose}/>
-                                {/* end show alert */}
                                 {/*<a*/}
-                                {/*    href="https://uonetplus.vulcan.net.pl/gminagoleszow"*/}
+                                {/*    href="https://naborp-kandydat.vulcan.net.pl/gminagoleszow/Candidates/Add"*/}
                                 {/*    target="_blank"*/}
                                 {/*    rel="noreferrer"*/}
-                                {/*    className="rounded-md bg-white px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"*/}
+                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
                                 {/*>*/}
-                                {/*    E-dziennik*/}
+                                {/*    Rekrutacja do przedszkoli*/}
                                 {/*</a>*/}
+                                {/* button show alert */}
+                                {/*<button*/}
+                                {/*    onClick={onShow}*/}
+                                {/*    type="button"*/}
+                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
+                                {/*>*/}
+                                {/*    Harmonogram - przedszkola*/}
+                                {/*</button>*/}
+                                {/*<Alert open={open} onClose={onClose}/>*/}
+                                {/* end show alert */}
+                                <a
+                                    href="https://uonetplus.vulcan.net.pl/gminagoleszow"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="rounded-md bg-white px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                                >
+                                    E-dziennik
+                                </a>
+                                <a
+                                    href="https://www.spcisownica.edu.pl/dokumenty/plan_lekcji2526.pdf"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="rounded-md bg-white px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                                >
+                                    Plan lekcji
+                                </a>
                             </div>
 
                             {/* link */}
                             <div className="overflow-hidden rounded-md bg-white shadow w-fit mt-20">
                                 <ul role="list" className="flex divide-x divide-gray-200">
-                                    <li className="px-6 py-2">
-                                        <a
-                                            href="https://uonetplus.vulcan.net.pl/gminagoleszow"
-                                            className="text-blue-800 hover:text-blue-900 hover:underline"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <PaperClipIcon
-                                                className="inline h-5 w-5 flex-shrink-0"
-                                                aria-hidden="true"
-                                            />{" "}
-                                            E-dziennik
-                                        </a>
-                                    </li>
                                     {/*<li className="px-6 py-2">*/}
                                     {/*    <a*/}
-                                    {/*        href="https://www.spcisownica.edu.pl/dokumenty/statut.pdf"*/}
+                                    {/*        href="https://uonetplus.vulcan.net.pl/gminagoleszow"*/}
                                     {/*        className="text-blue-800 hover:text-blue-900 hover:underline"*/}
                                     {/*        target="_blank"*/}
                                     {/*        rel="noreferrer"*/}
@@ -167,9 +161,23 @@ function Hero() {
                                     {/*            className="inline h-5 w-5 flex-shrink-0"*/}
                                     {/*            aria-hidden="true"*/}
                                     {/*        />{" "}*/}
-                                    {/*        Statut*/}
+                                    {/*        E-dziennik*/}
                                     {/*    </a>*/}
                                     {/*</li>*/}
+                                    <li className="px-6 py-2">
+                                        <a
+                                            href="https://www.spcisownica.edu.pl/dokumenty/statut.pdf"
+                                            className="text-blue-800 hover:text-blue-900 hover:underline"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <PaperClipIcon
+                                                className="inline h-5 w-5 flex-shrink-0"
+                                                aria-hidden="true"
+                                            />{" "}
+                                            Statut
+                                        </a>
+                                    </li>
                                     <li className="px-6 py-2">
                                         <Link
                                             to="/accessibility"

@@ -33,6 +33,10 @@ const generalDocuments = [
     url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/procedura_zgloszen.pdf`,
   },
   {
+    name: "Edukacja zdrowotna - rezygnacja",
+    url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/edukacja_zdrowotna_rezygnacja.pdf`,
+  },
+  {
     name: "Biblioteka instrukcja",
     url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/biblioteka_on_line.pdf`,
   },

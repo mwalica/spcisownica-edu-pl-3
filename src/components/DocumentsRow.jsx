@@ -8,6 +8,7 @@ const tabs = [
 ]
 
 const generalDocuments = [
+    { name: "Regulamin przedszkola", url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/regulamin_pracy_przedszkola.pdf` },
     { name: "Klauzula dotycząca udostępniania wizerunku", url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/klauzula_wizerunek_p.pdf` },
     { name: "Klauzula dla rodziców/opiekunów prawnych dzieci", url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/klauzula_opiekunow_p.pdf` },
     { name: "Klauzula dla osób upoważnionych przez rodzica/opiekuna prawnego do odbioru dziecka", url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/klauzula_odbior_p.pdf` },

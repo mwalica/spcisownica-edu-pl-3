@@ -33,9 +33,10 @@ const parents = [
 const projects = [
     {name: "Aktywna tablica", href: "active-board"},
     {name: "Aktywny do kwadratu", href: "active-power"},
+    {name: "Równe warunki rozwoju dla uczniów w Gminie Goleszów", href: "project-rowne"},
     {name: "Narodowy Program Rozwoju Czytelnictwa", href: "books"},
-    {name: "Projekt szkolny", href: "projects-school"},
-    {name: "Projekt przedszkolny", href: "projects-preschool"},
+    // {name: "Projekt szkolny", href: "projects-school"},
+    {name: "Gmina Goleszów wspiera edukację przedszkolną", href: "projects-preschool"},
 ]
 
 const preschoolCis = [

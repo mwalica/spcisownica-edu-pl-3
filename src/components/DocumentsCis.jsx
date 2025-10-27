@@ -1,14 +1,22 @@
-import { PaperClipIcon } from '@heroicons/react/20/solid'
-import { Tab } from '@headlessui/react'
-import { Fragment } from 'react'
+import {PaperClipIcon} from '@heroicons/react/20/solid'
+import {Tab} from '@headlessui/react'
+import {Fragment} from 'react'
 
 const tabs = [
-    { name: 'Dokumenty ogólne' },
+    {name: 'Dokumenty ogólne'},
     // { name: 'Nabór' },
 ]
 
 const generalDocuments = [
-    { name: "Rozkład dnia", url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/rozklad_dnia_cisownica.pdf` },
+    {
+        name: "Statut przedszkola",
+        url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/regulamin_pracy_przedszkola.pdf`
+    },
+    {
+        name: "Regulamin przedszkola",
+        url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/statut_przedszkole_cisownica.pdf`
+    },
+    {name: "Rozkład dnia", url: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/rozklad_dnia_cisownica.pdf`},
 ]
 
 function classNames(...classes) {
@@ -22,7 +30,7 @@ function Documents() {
                 <Tab.List className="-mb-px flex space-x-8 justify-center" aria-label="Tabs">
                     {tabs.map(tab => (
                         <Tab as={Fragment} key={tab.name}>
-                            {({ selected }) => (
+                            {({selected}) => (
                                 /* Use the `selected` state to conditionally style the selected tab. */
                                 <button
                                     className={
@@ -52,7 +60,11 @@ function Documents() {
                                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" key={document.name}>
                                     <dt className="text-sm font-medium leading-6 text-gray-900">{document.name}</dt>
                                     <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                        <a href={document.url} className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" " + document.url.slice(document.url.lastIndexOf("/") + 1)}</a>
+                                        <a href={document.url}
+                                           className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank"
+                                           rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0"
+                                                                           aria-hidden="true"/>{" " + document.url.slice(document.url.lastIndexOf("/") + 1)}
+                                        </a>
                                     </dd>
                                 </div>
                             ))
