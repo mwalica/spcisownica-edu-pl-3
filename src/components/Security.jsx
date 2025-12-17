@@ -27,7 +27,7 @@ function Security() {
                                         classNames(
                                             selected
                                                 ? 'border-purple-600 text-blue-600 outline-none'
-                                                : 'border-transparent text-gray-600 hover:border-gray-300 hover:text-gray-800',
+                                                : 'border-transparent text-gray-600 dark:text-gray-100 hover:border-gray-300 hover:text-gray-800 dark:hover:border-red-500',
                                             'whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
                                         )
                                     }
@@ -72,7 +72,7 @@ function Security() {
                         <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
                             <dt className='info-item-dt'>Inspektor Ochrony Danych</dt>
                             <dd className='info-item-dd font-medium'>
-                                Paulina Jochacy
+                                Anna Romik
                             </dd>
                         </div>
                         <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>

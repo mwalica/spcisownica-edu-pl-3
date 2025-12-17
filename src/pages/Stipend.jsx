@@ -30,9 +30,9 @@ function StipendPage() {
                             <p className="par-1">W Szkole Podstawowej im. Jury Gajdzicy w Cisownicy przyznawane są stypedia:</p>
                             <ol className="list-decimal flex flex-col space-y-3">
                                 <li className="leading-6">Tryb przyznawania stypendiów w ramach <strong>Lokalnego Programu Wspierania Edukacji Uzdolnionych Dzieci i Młodzieży w Gminie Goleszów</strong><br />
-                                    <a href="https://www.spcisownica.edu.pl/dokumenty/regulamin_stypendium.pdf" className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}Zasady przyznawania stypendiów</a></li>
+                                    <a href="https://www.spcisownica.edu.pl/dokumenty/regulamin_stypendium.pdf" className="text-blue-800 dark:text-blue-300 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}Zasady przyznawania stypendiów</a></li>
                                 <li className="leading-6" >Stypendium profesora Sławka dla najlepszych uczniów Szkoły Podstawowej im. Jury Gajdzicy w Cisownicy<br />
-                                    <a href="https://www.spcisownica.edu.pl/dokumenty/regulamin_stypendium_prof_slawka.pdf" className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}Stypendium prof. Sławka - regulamin</a></li>
+                                    <a href="https://www.spcisownica.edu.pl/dokumenty/regulamin_stypendium_prof_slawka.pdf" className="text-blue-800 dark:text-blue-300 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}Stypendium prof. Sławka - regulamin</a></li>
                             </ol>
 
 

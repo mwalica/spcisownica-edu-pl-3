@@ -3,6 +3,8 @@ import TopMenu from "../components/TopMenu"
 import Footer from "../components/Footer"
 
 function RootLayout() {
+
+
     return (
         <>
             <TopMenu />

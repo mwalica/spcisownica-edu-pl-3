@@ -166,27 +166,27 @@ function ActiveBoardPage() {
                                         <div
                                             className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
                                             <table className="table-auto min-w-full divide-gray-300">
-                                                <thead className="bg-gray-50">
+                                                <thead className="bg-gray-50 dark:bg-gray-800">
                                                 <tr>
                                                     <th scope="col"
-                                                        className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-800 sm:pl-6">
+                                                        className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-800 dark:text-gray-100 sm:pl-6">
                                                         Zadanie
                                                     </th>
                                                     <th scope="col"
-                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800">
+                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800 dark:text-gray-100">
                                                         Sposób realizacji
                                                     </th>
                                                     <th scope="col"
-                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800">
+                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800 dark:text-gray-100">
                                                         Osoby odpowiedzialne
                                                     </th>
                                                     <th scope="col"
-                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800">
+                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800 dark:text-gray-100">
                                                         Termin
                                                     </th>
                                                 </tr>
                                                 </thead>
-                                                <tbody className="divide-y divide-gray-200 bg-white">
+                                                <tbody className="divide-y divide-gray-200 bg-white dark:bg-gray-900">
                                                 {tasks.map((task) => (
                                                     <tr key={task.id}>
                                                         <td className="whitespace-wrap px-3 py-4 text-sm align-top">{task.name}</td>

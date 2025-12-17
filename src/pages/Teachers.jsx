@@ -1,7 +1,8 @@
 import PageTitle from "../components/PageTitle"
 
 const teachers = [
-    { name: "Edyta Badura", role: "wychowanie przedszkolne" },
+    { name: "Edyta Badura", role: "nauczanie zintegrowane" },
+    { name: "Elżbieta Bujok", role: "nauczanie zintegrowane" },
     { name: "Barbara Bocek", role: "język angielski, logopedia" },
     { name: "Klaudia Brańka", role: "pedagog szkolny, wychowanie do życia w rodzinie" },
     { name: "Agnieszka Choińska", role: "plastyka, nauczanie zintegrowane, terapia pedagogiczna (urlop)" },
@@ -14,6 +15,7 @@ const teachers = [
     { name: "Przemysław Misiarz", role: "wychowanie fizyczne" },
     { name: "Ewelina Czermak-Najbor", role: "język polski" },
     { name: "Beata Pieńkowska", role: "matematyka" },
+    { name: "Jadwiga Pipień", role: "matematyka" },
     { name: "Anna Pieszka", role: "nauczanie zintegrowane, wychowawca świetlicy" },
     { name: "Renata Polok", role: "język angielski" },
     { name: "Elżbieta Stanieczek", role: "muzyka, bibliotekarz" },
@@ -23,23 +25,27 @@ const teachers = [
     { name: "Adam Heczko", role: "wychowanie fizyczne" },
     { name: "Agnieszka Macha", role: "język niemiecki, nauczyciel wspomagający" },
     { name: "Marek Walica", role: "informatyka" },
-    { name: "Andrzej Kloske", role: "doradztwo zawodowe" },
-    { name: "Agata Gwóźdź", role: "psycholog szkolny" },
+    { name: "Andrzej Kloske", role: "doradztwo zawodowe, historia" },
+    { name: "Ilona Boruta", role: "psycholog szkolny" },
     { name: "Magdalena Dziendziel", role: "historia, wos" },
-    { name: "Paweł Burzawa", role: "fizyka" },
-    { name: "Małgorzata Szklorz", role: "chemia" },
+    { name: "Paweł Burzawa", role: "fizyka, chemia" },
     { name: "Monika Droździk", role: "język polski, edukacja dla bezpieczeństwa" },
     { name: "Samuel Gogółka", role: "religia, technika" },
-    { name: "Paweł Dobrucki", role: "plastyka" },
-    { name: "Wiesława Machalica", role: "wychowawca oddziału przedszkolnego" },
+    { name: "Paweł Pieszka", role: "plastyka, świetlica" },
     { name: "Elżbieta Wójcik", role: "wychowawca oddziału przedszkolnego" },
-    { name: "Renata Stanieczek", role: "wychowawca przedszkola" },
-    { name: "Gabriela Sliwka", role: "wychowawca przedszkola" },
-    { name: "Justyna Smolik", role: "wychowawca przedszkola" },
+    { name: "Monika Cieślar", role: "wychowawca przedszkola" },
+    { name: "Gabriela Śliwka", role: "wychowawca przedszkola" },
+    { name: "Agnieszka Kłek", role: "wychowawca przedszkola" },
     { name: "Arleta Maly", role: "wychowawca przedszkola" },
+    { name: "Michalina Tengler", role: "wychowawca przedszkola" },
+    { name: "Renata Stanieczek", role: "wychowawca przedszkola" },
     { name: "Dorota Somerlik", role: "nauczyciel wspomagający" },
+    { name: "Krzysztof Jastrzębski", role: "nauczyciel wspomagający" },
     { name: "Klaudia Holisz", role: "nauczanie zintegrowane" },
-    { name: "Weronika Dąbrowiecka", role: "geografia, matematyka" }
+    { name: "Tomasz Beczała", role: "biologia" },
+    { name: "Patryk Lipowczan", role: "geografia" },
+    { name: "Gabriela Sikora", role: "religia" },
+    { name: "Dorota Kania", role: "religia" }
 ]
 
 function TeachersPage() {
@@ -76,20 +82,20 @@ function TeachersPage() {
                                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
                                         <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
                                             <table className="min-w-full divide-y divide-gray-300">
-                                                <thead className="bg-gray-50">
+                                                <thead className="bg-gray-50 dark:bg-gray-800">
                                                     <tr>
-                                                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-800 sm:pl-6">
+                                                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-800 dark:text-gray-100 sm:pl-6">
                                                             Nauczyciel
                                                         </th>
-                                                        <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800">
+                                                        <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800 dark:text-gray-100">
                                                             Przedmiot
                                                         </th>
                                                     </tr>
                                                 </thead>
-                                                <tbody className="divide-y divide-gray-200 bg-white">
+                                                <tbody className="divide-y divide-gray-200 dark:divide-gray-600 dark:bg-gray-900">
                                                     {teachers.map((teacher) => (
                                                         <tr key={teacher.name}>
-                                                            <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-800 sm:pl-6">
+                                                            <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-800 dark:text-gray-100 sm:pl-6">
                                                                 <strong className="font-medium">{teacher.name}</strong>
                                                             </td>
                                                             <td className="whitespace-nowrap px-3 py-4 text-sm">{teacher.role}</td>

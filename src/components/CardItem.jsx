@@ -14,11 +14,11 @@ function CardItem({ post }) {
                     src={post.startImage.url}
                     alt={post.startImage.alt} />
             </div>
-            <div className="flex flex-1 flex-col justify-between bg-white p-6">
+            <div className="flex flex-1 flex-col justify-between bg-white dark:bg-gray-800 p-6">
 
                 <div className="mb-2 flex items-center">
                     <div>
-                        <p className="text-xs font-normal">
+                        <p className="text-xs font-normal dark:text-gray-100">
                             {post.author}
                         </p>
                         <div className="flex space-x-1 font-normal text-orange-500 text-xs">
@@ -31,7 +31,7 @@ function CardItem({ post }) {
 
                     <div className="mt-2 block">
                         <p className="text-xl font-normal uppercase text-pink-500">{post.title}</p>
-                        <div className="mt-3 text-base">
+                        <div className="mt-3 text-base dark:text-gray-100">
                             <ReactMarkdown>{startText}</ReactMarkdown>
                         </div>
                     </div>

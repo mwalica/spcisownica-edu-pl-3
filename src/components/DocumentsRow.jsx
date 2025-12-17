@@ -53,9 +53,9 @@ function Documents() {
                         {
                             generalDocuments.map(document => (
                                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" key={document.name}>
-                                    <dt className="text-sm font-medium leading-6 text-gray-900">{document.name}</dt>
+                                    <dt className="text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">{document.name}</dt>
                                     <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                        <a href={document.url} className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" " + document.url.slice(document.url.lastIndexOf("/") + 1)}</a>
+                                        <a href={document.url} className="text-blue-800 dark:text-blue-400 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" " + document.url.slice(document.url.lastIndexOf("/") + 1)}</a>
                                     </dd>
                                 </div>
                             ))

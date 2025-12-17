@@ -41,14 +41,14 @@ const projects = [
 
 const preschoolCis = [
     {name: "Informacje", href: "preschool-cis/info"},
-    {name: "Wydarzenia", href: "preschool-cis/events"},
+    // {name: "Wydarzenia", href: "preschool-cis/events"},
     {name: "Rozkład dnia", href: `${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/rozklad_dnia_cisownica.pdf`},
     {name: "Dokumenty", href: "preschool-cis/documents"},
 ]
 
 const preschoolRow = [
     {name: "Informacje", href: "preschool-row/info"},
-    {name: "Wydarzenia", href: "preschool-row/events"},
+    // {name: "Wydarzenia", href: "preschool-row/events"},
     {name: "Zasady", href: "preschool-row/rules"},
     {name: "Rozkład dnia", href: `preschool-row/schedule`},
     {name: "Dokumenty", href: "preschool-row/documents"},
@@ -67,7 +67,7 @@ const TopMenu = () => {
 
     return (
         <header
-            className={`sticky top-0 z-50 transition-shadow ${scrollPosition > 0 || pathname !== "/" ? "bg-white opacity-95 shadow shadow-gray-200" : "bg-transparent shadow-none"}`}>
+            className={`sticky top-0 z-50 transition-shadow ${scrollPosition > 0 || pathname !== "/" ? "bg-white opacity-95 dark:bg-black shadow shadow-gray-200 dark:shadow-gray-800" : "bg-transparent shadow-none"}`}>
             <TopBar/>
             {/* start nav */}
             <nav
@@ -113,14 +113,14 @@ const TopMenu = () => {
                             leaveTo='opacity-0 translate-y-1'
                         >
                             <Popover.Panel
-                                className='absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5'>
+                                className='absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5 dark:bg-gray-900'>
                                 {({close}) => (
                                     <>
                                         {information.map((item) => (
                                             <Link
                                                 key={item.name}
                                                 to={item.href}
-                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50'
+                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50 dark:hover:bg-black'
                                                 onClick={() => close()}
                                             >
                                                 {item.name}
@@ -152,14 +152,14 @@ const TopMenu = () => {
                             leaveTo='opacity-0 translate-y-1'
                         >
                             <Popover.Panel
-                                className='absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5'>
+                                className='absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5 dark:bg-gray-900'>
                                 {({close}) => (
                                     <>
                                         {parents.map(item => (
                                             <Link
                                                 key={item.name}
                                                 to={item.href}
-                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50'
+                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50 dark:hover:bg-black'
                                                 onClick={() => close()}
                                             >
                                                 {item.name}
@@ -200,14 +200,14 @@ const TopMenu = () => {
                             leaveTo='opacity-0 translate-y-1'
                         >
                             <Popover.Panel
-                                className='absolute -left-8 top-full z-10 mt-3 w-64 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5'>
+                                className='absolute -left-8 top-full z-10 mt-3 w-64 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5 dark:bg-gray-900'>
                                 {({close}) => (
                                     <>
                                         {projects.map(item => (
                                             <Link
                                                 key={item.name}
                                                 to={item.href}
-                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50'
+                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50 dark:hover:bg-black'
                                                 onClick={() => close()}
                                             >
                                                 {item.name}
@@ -237,14 +237,14 @@ const TopMenu = () => {
                             leaveTo='opacity-0 translate-y-1'
                         >
                             <Popover.Panel
-                                className='absolute -left-8 top-full z-10 mt-3 w-64 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5'>
+                                className='absolute -left-8 top-full z-10 mt-3 w-64 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5 dark:bg-gray-900'>
                                 {({close}) => (
                                     <>
                                         {preschoolCis.map(item => (
                                             <Link
                                                 key={item.name}
                                                 to={item.href}
-                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50'
+                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50 dark:hover:bg-black'
                                                 onClick={() => close()}
                                             >
                                                 {item.name}
@@ -274,14 +274,14 @@ const TopMenu = () => {
                             leaveTo='opacity-0 translate-y-1'
                         >
                             <Popover.Panel
-                                className='absolute -left-8 top-full z-10 mt-3 w-64 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5'>
+                                className='absolute -left-8 top-full z-10 mt-3 w-64 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-800/5 dark:bg-gray-900'>
                                 {({close}) => (
                                     <>
                                         {preschoolRow.map(item => (
                                             <Link
                                                 key={item.name}
                                                 to={item.href}
-                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50'
+                                                className='block rounded-lg px-3 py-2 text-sm top-menu-item hover:bg-gray-50 dark:hover:bg-black'
                                                 onClick={() => close()}
                                             >
                                                 {item.name}

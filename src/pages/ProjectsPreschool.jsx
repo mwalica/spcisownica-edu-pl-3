@@ -90,6 +90,27 @@ function ProjectsPreschoolPage() {
 
 
                             <p className="mt-8">Na działania realizowane w obu placówkach przedszkolnych przeznaczono <b>66 610,81 zł</b></p>
+                            <div className="mt-8">
+                                <p>Dokumenty do pobrania:</p>
+                                <ul>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_styczen26_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - styczeń 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_grudzien25_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - grudzień 2025</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_listopad25_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - listopad 2025</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_pazdziernik25_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - październik 2025</a></li>
+                                </ul>
+                            </div>
 
 
                         {/* info container */}

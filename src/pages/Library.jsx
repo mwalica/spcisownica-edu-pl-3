@@ -28,17 +28,17 @@ function LibraryPage() {
 
                         {/* content */}
                         <div className="flex flex-col items-center space-y-4">
-                            <div className="overflow-hidden rounded-md bg-white shadow">
-                                <ul role="list" className="flex divide-x divide-gray-200">
+                            <div className="overflow-hidden rounded-md bg-white shadow dark:bg-gray-900">
+                                <ul role="list" className="flex divide-x divide-gray-200 dark:divide-gray-400">
 
                                     <li className="px-6 py-4">
-                                        <a href="https://m020129.molnet.mol.pl/" className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><LinkIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}
+                                        <a href="https://m020129.molnet.mol.pl/" className="text-blue-800 hover:text-blue-900 hover:underline dark:text-blue-100 dark:hover:text-blue-200" target="_blank" rel="noreferrer"><LinkIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}
                                             Biblioteka Online</a>
 
                                     </li>
                                     <li className="px-6 py-4">
 
-                                        <a href="https://spcisownica.edu.pl/dokumenty/biblioteka_on_line.pdf" className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}Biblioteka instrukcje</a>
+                                        <a href="https://spcisownica.edu.pl/dokumenty/biblioteka_on_line.pdf" className="text-blue-800 hover:text-blue-900 hover:underline dark:text-blue-100 dark:hover:text-blue-200" target="_blank" rel="noreferrer"><PaperClipIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}Biblioteka instrukcje</a>
 
                                     </li>
 

@@ -34,7 +34,7 @@ function Hero() {
             <div className="relative isolate">
                 {/* svg graphic 1 */}
                 <svg
-                    className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+                    className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 dark:hidden [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
                     aria-hidden="true"
                 >
                     <defs>
@@ -91,7 +91,7 @@ function Hero() {
                             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
                                 <a
                                     href="#notices"
-                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="rounded-md bg-indigo-600 dark:bg-red-500 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
                                     Ogłoszenia
                                 </a>
@@ -133,7 +133,7 @@ function Hero() {
                                     href="https://uonetplus.vulcan.net.pl/gminagoleszow"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="rounded-md bg-white px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                                    className="rounded-md bg-white dark:bg-gray-800 px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 dark:text-gray-100 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                                 >
                                     E-dziennik
                                 </a>
@@ -141,15 +141,15 @@ function Hero() {
                                     href="https://www.spcisownica.edu.pl/dokumenty/plan_lekcji2526.pdf"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="rounded-md bg-white px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                                    className="rounded-md bg-white dark:bg-gray-800 px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 dark:text-gray-100 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                                 >
                                     Plan lekcji
                                 </a>
                             </div>
 
                             {/* link */}
-                            <div className="overflow-hidden rounded-md bg-white shadow w-fit mt-20">
-                                <ul role="list" className="flex divide-x divide-gray-200">
+                            <div className="overflow-hidden rounded-md bg-white dark:bg-gray-900 shadow w-fit mt-20">
+                                <ul role="list" className="flex divide-x divide-gray-200 dark:divide-gray-800">
                                     {/*<li className="px-6 py-2">*/}
                                     {/*    <a*/}
                                     {/*        href="https://uonetplus.vulcan.net.pl/gminagoleszow"*/}
@@ -167,7 +167,7 @@ function Hero() {
                                     <li className="px-6 py-2">
                                         <a
                                             href="https://www.spcisownica.edu.pl/dokumenty/statut.pdf"
-                                            className="text-blue-800 hover:text-blue-900 hover:underline"
+                                            className="text-blue-800 hover:text-blue-900 hover:underline dark:text-blue-100 dark:hover:text-blue-200"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -181,7 +181,7 @@ function Hero() {
                                     <li className="px-6 py-2">
                                         <Link
                                             to="/accessibility"
-                                            className="text-blue-800 hover:text-blue-900 hover:underline"
+                                            className="text-blue-800 hover:text-blue-900 hover:underline dark:text-blue-100 dark:hover:text-blue-200"
                                         >
                                             <LinkIcon
                                                 className="inline h-5 w-5 flex-shrink-0"
@@ -193,7 +193,7 @@ function Hero() {
                                     <li className="px-6 py-2">
                                         <a
                                             href="https://www.spcisownica.edu.pl/dokumenty/standardy_ochrony.pdf"
-                                            className="text-blue-800 hover:text-blue-900 hover:underline"
+                                            className="text-blue-800 hover:text-blue-900 hover:underline dark:text-blue-100 dark:hover:text-blue-200"
                                             target="_blank"
                                             rel="noreferrer"
                                         >

@@ -43,11 +43,11 @@ function UsefulLinkPage() {
 
                     {/* content */}
                     <div className="flex flex-col items-center space-y-4">
-                        <div className="overflow-hidden rounded-md bg-white shadow">
+                        <div className="overflow-hidden rounded-md bg-white dark:bg-gray-900 shadow">
                             <ul role="list" className="flex flex-col divide-y divide-gray-200">
                                 {links.map(item => (
-                                    <li className="px-6 py-4">
-                                        <a href={item.href} className="text-blue-800 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><LinkIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}
+                                    <li className="px-6 py-4" key={item.id}>
+                                        <a href={item.href} className="text-blue-800 dark:text-blue-400 hover:text-blue-900 hover:underline" target="_blank" rel="noreferrer"><LinkIcon className="inline h-5 w-5 flex-shrink-0" aria-hidden="true" />{" "}
                                             {item.link}</a> - {item.desc}
                                     </li>
                                 ))}

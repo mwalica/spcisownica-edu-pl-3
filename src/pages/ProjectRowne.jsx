@@ -114,7 +114,7 @@ function ProjectRownePage() {
                                     Fundusz Społeczny+)
                                 </li>
                                 <li>Wartość wydatków kwalifikowalnych: <strong>716 132,55 zł</strong></li>
-                                <li>Wartość dofinansowania: <strong>680 325,92 zł</strong></li>
+                                <li>Wartość dofinansowania: <strong>680 325,92 zł</strong> w tym z UE <strong>608 712,66 zł</strong></li>
                                 <li>Okres realizacji projektu: <strong>2024-07-01 - 2026-06-30</strong></li>
                             </ul>
                             <p className='par-1'>
@@ -145,15 +145,36 @@ function ProjectRownePage() {
                                 <p>Dokumenty do pobrania:</p>
                                 <ul>
                                     <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/formularz_rekrutacji_do_projektu.docx`}
+                                        target="_blank"
+                                        rel="noreferrer">Formularz rekrutacyjny (format docx - możliwość edytowania w edytorze tekstu )</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
                                         href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/formularz_rekrutacji_do_projektu.pdf`}
                                         target="_blank"
-                                        rel="noreferrer">Formularz rekrutacyjny</a></li>
+                                        rel="noreferrer">Formularz rekrutacyjny (format pdf)</a></li>
                                     <li className='text-blue-700 text-lg hover:text-blue-500'><a
                                         href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/regulamin_rekrutacji_do_projektu.pdf`}
                                         target="_blank"
                                         rel="noreferrer">Regulamin rekrutacji do projektu
                                         Równe warunki rozwoju dla uczniów szkół podstawowych
                                         w Gminie Goleszów</a></li>
+                                    <li><hr className="my-2"/></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_styczen26_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - styczeń 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_grudzien25_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - grudzień 2025</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_listopad25_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - listopad 2025</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_pazdziernik25_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - październik 2025</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -51,7 +51,7 @@ function ScheduleRow() {
                                         classNames(
                                             selected
                                                 ? 'border-purple-600 text-blue-600 outline-none'
-                                                : 'border-transparent text-gray-600 hover:border-gray-300 hover:text-gray-800',
+                                                : 'border-transparent text-gray-600 dark:text-gray-200 hover:border-gray-300 dark:hover:border-red-500 hover:text-gray-800',
                                             'whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
                                         )
                                     }
@@ -72,8 +72,8 @@ function ScheduleRow() {
                         {
                             schedule1.map(item => (
                                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" key={item.id}>
-                                    <dt className="text-sm font-medium leading-6 text-blue-600">{item.time}</dt>
-                                    <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                                    <dt className="text-sm font-medium leading-6 text-blue-600 dark:text-blue-400">{item.time}</dt>
+                                    <dd className="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-100 sm:col-span-2 sm:mt-0">
                                         {item.description}
                                     </dd>
                                 </div>
@@ -86,8 +86,8 @@ function ScheduleRow() {
                         {
                             schedule2.map(item => (
                                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" key={item.id}>
-                                    <dt className="text-sm font-medium leading-6 text-blue-600">{item.time}</dt>
-                                    <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                                    <dt className="text-sm font-medium leading-6 text-blue-600 dark:text-blue-400">{item.time}</dt>
+                                    <dd className="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-100 sm:col-span-2 sm:mt-0">
                                         {item.description}
                                     </dd>
                                 </div>

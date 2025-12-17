@@ -18,8 +18,8 @@ const NoticeItem = ({ notice }) => {
 
     <>
       <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-        <dt className="text-sm font-medium leading-6 text-gray-800">{notice.title}</dt>
-        <dd className="mt-1 flex text-sm leading-6 text-gray-600 sm:col-span-2 sm:mt-0">
+        <dt className="text-sm font-medium leading-6 text-gray-800 dark:text-blue-300">{notice.title}</dt>
+        <dd className="mt-1 flex text-sm leading-6 text-gray-600 dark:text-gray-100 sm:col-span-2 sm:mt-0">
           <span className="flex-grow">
             <ReactMarkdown>{notice.description}</ReactMarkdown>
           </span>
