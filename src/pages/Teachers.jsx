@@ -1,51 +1,45 @@
 import PageTitle from "../components/PageTitle"
 
 const teachers = [
-    { name: "Edyta Badura", role: "nauczanie zintegrowane" },
-    { name: "Elżbieta Bujok", role: "nauczanie zintegrowane" },
-    { name: "Barbara Bocek", role: "język angielski, logopedia" },
-    { name: "Klaudia Brańka", role: "pedagog szkolny, wychowanie do życia w rodzinie" },
-    { name: "Agnieszka Choińska", role: "plastyka, nauczanie zintegrowane, terapia pedagogiczna (urlop)" },
-    { name: "Monika Cieślar", role: "wychowanie przedszkolne" },
-    { name: "Małgorzata Czyż", role: "biologia, przyroda, wychowawca świetlicy" },
-    { name: "Aleksandra Chmiel", role: "terapia pedagogiczna, nauczyciel wspomagający" },
-    { name: "Małgorzata Jurek", role: "religia, logopedia" },
-    { name: "Izabela Kobiela", role: "nauczanie zintegrowane" },
-    { name: "Gabriela Chowaniok", role: "nauczanie zintegrowane" },
-    { name: "Przemysław Misiarz", role: "wychowanie fizyczne" },
-    { name: "Ewelina Czermak-Najbor", role: "język polski" },
-    { name: "Beata Pieńkowska", role: "matematyka" },
-    { name: "Jadwiga Pipień", role: "matematyka" },
-    { name: "Anna Pieszka", role: "nauczanie zintegrowane, wychowawca świetlicy" },
-    { name: "Renata Polok", role: "język angielski" },
-    { name: "Elżbieta Stanieczek", role: "muzyka, bibliotekarz" },
-    { name: "Krystyna Sztwiertnia", role: "nauczanie zintegrowane, logopedia" },
-    { name: "ks. Marek Twardzik", role: "religia" },
-    { name: "Robert Zając", role: "wychowanie fizyczne" },
-    { name: "Adam Heczko", role: "wychowanie fizyczne" },
-    { name: "Agnieszka Macha", role: "język niemiecki, nauczyciel wspomagający" },
-    { name: "Marek Walica", role: "informatyka" },
-    { name: "Andrzej Kloske", role: "doradztwo zawodowe, historia" },
-    { name: "Ilona Boruta", role: "psycholog szkolny" },
-    { name: "Magdalena Dziendziel", role: "historia, wos" },
-    { name: "Paweł Burzawa", role: "fizyka, chemia" },
-    { name: "Monika Droździk", role: "język polski, edukacja dla bezpieczeństwa" },
-    { name: "Samuel Gogółka", role: "religia, technika" },
-    { name: "Paweł Pieszka", role: "plastyka, świetlica" },
-    { name: "Elżbieta Wójcik", role: "wychowawca oddziału przedszkolnego" },
-    { name: "Monika Cieślar", role: "wychowawca przedszkola" },
-    { name: "Gabriela Śliwka", role: "wychowawca przedszkola" },
-    { name: "Agnieszka Kłek", role: "wychowawca przedszkola" },
-    { name: "Arleta Maly", role: "wychowawca przedszkola" },
-    { name: "Michalina Tengler", role: "wychowawca przedszkola" },
-    { name: "Renata Stanieczek", role: "wychowawca przedszkola" },
-    { name: "Dorota Somerlik", role: "nauczyciel wspomagający" },
-    { name: "Krzysztof Jastrzębski", role: "nauczyciel wspomagający" },
-    { name: "Klaudia Holisz", role: "nauczanie zintegrowane" },
-    { name: "Tomasz Beczała", role: "biologia" },
-    { name: "Patryk Lipowczan", role: "geografia" },
-    { name: "Gabriela Sikora", role: "religia" },
-    { name: "Dorota Kania", role: "religia" }
+    {name: "Gabriela Szlembarska", role: "nauczyciel, wychowawca kl. I"},
+    {name: "Izabela Kobiela", role: "nauczyciel, wychowawca kl. IIa"},
+    {name: "Klaudia Holisz", role: "nauczyciel, wychowawca kl. IIb"},
+    {name: "Edyta Badura", role: "nauczyciel, wychowawca kl. IIIa"},
+    {name: "Elżbieta Bujok", role: "nauczyciel, wychowawca kl. IIIb"},
+    {name: "Patryk Lipowczan", role: "nauczyciel, wychowawca kl. IVa"},
+    {name: "Monika Droździk", role: "nauczyciel, wychowawca kl. IVb"},
+    {name: "Ewelina Czermak-Najbor", role: "nauczyciel, wychowawca kl. Va"},
+    {name: "Jadwiga Pipień", role: "nauczyciel, wychowawca kl. Vb"},
+    {name: "Adam Heczko", role: "nauczyciel, wychowawca kl. VI"},
+    {name: "Barbara Bocek", role: "nauczyciel, wychowawca kl. VIIa"},
+    {name: "Samuel Gogółka", role: "nauczyciel, wychowawca kl. VIIb"},
+    {name: "Robert Zając", role: "nauczyciel, wychowawca kl. VIIIa"},
+    {name: "Beata Pieńkowska", role: "nauczyciel, wychowawca kl. VIIIb"},
+    {name: "Tomasz Beczała", role: "nauczyciel"},
+    {name: "Paweł Burzawa", role: "nauczyciel"},
+    {name: "Magdalena Dziendziel", role: "nauczyciel"},
+    {name: "Monika Grzywna", role: "nauczyciel"},
+    {name: "Andrzej Kloske", role: "nauczyciel"},
+    {name: "Agnieszka Macha", role: "nauczyciel"},
+    {name: "Paweł Pieszka", role: "nauczyciel"},
+    {name: "Elżbieta Stanieczek", role: "nauczyciel"},
+    {name: "Marek Walica", role: "nauczyciel"},
+    {name: "Karina Chwastek-Kamieniorz", role: "nauczyciel, katecheta"},
+    {name: "Małgorzata Jurek", role: "nauczyciel, katecheta"},
+    {name: "Ilona Boruta", role: "nauczyciel wspomagający"},
+    {name: "Krzysztof Jastrzębski", role: "nauczyciel wspomagający"},
+    {name: "Martyna Mitręga", role: "nauczyciel wspomagający"},
+    {name: "Justyna Oleksy", role: "nauczyciel wspomagający"},
+    {name: "Joanna Biela", role: "psycholog szkolny"},
+    {name: "Klaudia Brańka", role: "pedagog szkolny"},
+    {name: "Gabriela Śliwka", role: "pedagog specjalny"},
+    {name: "Sara Borkała", role: "wychowawca przedszkola - oddział Równia"},
+    {name: "Monika Cieślar", role: "wychowawca przedszkola - oddział Równia"},
+    {name: "Agnieszka Kłek", role: "wychowawca przedszkola - oddział Równia"},
+    {name: "Arleta Maly", role: "wychowawca przedszkola - przedszkole Cisownica"},
+    {name: "Renata Stanieczek", role: "wychowawca przedszkola - przedszkole Cisownica"},
+    {name: "Michalina Tengler", role: "wychowawca przedszkola - przedszkole Cisownica"},
+
 ]
 
 function TeachersPage() {
@@ -70,7 +64,7 @@ function TeachersPage() {
                 <div className='overflow-hidden'>
                     <div className='mx-auto max-w-5xl px-6 pb-32 pt-12 sm:pt-16 lg:px-8 lg:pt-16'>
                         {/* title */}
-                        <PageTitle title='Nauczyciele' subtitle='Informacje' />
+                        <PageTitle title='Nauczyciele' subtitle='Informacje'/>
 
                         {/* content */}
                         <div>
@@ -80,27 +74,31 @@ function TeachersPage() {
                             <div className="mt-8 flow-root">
                                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                                        <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
+                                        <div
+                                            className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
                                             <table className="min-w-full divide-y divide-gray-300">
                                                 <thead className="bg-gray-50 dark:bg-gray-800">
-                                                    <tr>
-                                                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-800 dark:text-gray-100 sm:pl-6">
-                                                            Nauczyciel
-                                                        </th>
-                                                        <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800 dark:text-gray-100">
-                                                            Przedmiot
-                                                        </th>
-                                                    </tr>
+                                                <tr>
+                                                    <th scope="col"
+                                                        className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-800 dark:text-gray-100 sm:pl-6">
+                                                        Nauczyciel
+                                                    </th>
+                                                    <th scope="col"
+                                                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-800 dark:text-gray-100">
+                                                        Przedmiot
+                                                    </th>
+                                                </tr>
                                                 </thead>
-                                                <tbody className="divide-y divide-gray-200 dark:divide-gray-600 dark:bg-gray-900">
-                                                    {teachers.map((teacher) => (
-                                                        <tr key={teacher.name}>
-                                                            <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-800 dark:text-gray-100 sm:pl-6">
-                                                                <strong className="font-medium">{teacher.name}</strong>
-                                                            </td>
-                                                            <td className="whitespace-nowrap px-3 py-4 text-sm">{teacher.role}</td>
-                                                        </tr>
-                                                    ))}
+                                                <tbody
+                                                    className="divide-y divide-gray-200 dark:divide-gray-600 dark:bg-gray-900">
+                                                {teachers.map((teacher) => (
+                                                    <tr key={teacher.name}>
+                                                        <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-800 dark:text-gray-100 sm:pl-6">
+                                                            <strong className="font-medium">{teacher.name}</strong>
+                                                        </td>
+                                                        <td className="whitespace-nowrap px-3 py-4 text-sm">{teacher.role}</td>
+                                                    </tr>
+                                                ))}
                                                 </tbody>
                                             </table>
                                         </div>

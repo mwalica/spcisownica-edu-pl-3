@@ -160,6 +160,26 @@ function ProjectRownePage() {
                                         w Gminie Goleszów</a></li>
                                     <li><hr className="my-2"/></li>
                                     <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_czerwiec26_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - czerwiec 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_maj26_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - maj 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_kwiecien26_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - kwiecień 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_marzec26_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - marzec 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_luty26_sp.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - luty 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
                                         href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_styczen26_sp.pdf`}
                                         target="_blank"
                                         rel="noreferrer">Miesięczny harmonogram - styczeń 2026</a></li>

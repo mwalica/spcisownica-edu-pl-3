@@ -27,10 +27,10 @@ function ContributionPage() {
                         {/* content */}
                         <div>
                             <p className="pb-4">
-                                Wysokość składki na Radę Rodziców w roku szkolnym 2020/2021 wynosi:</p>
+                                Wysokość składki na Radę Rodziców w roku szkolnym 2026/2027 wynosi:</p>
                             <ul className="flex flex-col space-y-4">
-                                <li>50 złotych za <strong>1 dziecko</strong></li>
-                                <li>30 złotych za <strong>2 dziecko</strong></li>
+                                <li>60 złotych za <strong>1 dziecko</strong></li>
+                                <li>40 złotych za <strong>2 dziecko</strong></li>
                                 <li><strong>3 dziecko i kolejne</strong> zwolnione jest ze składki</li>
                             </ul>
 

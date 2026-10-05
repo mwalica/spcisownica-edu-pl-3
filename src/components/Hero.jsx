@@ -8,10 +8,12 @@ import img3 from "../assets/zspcisownica-3.jpg";
 import img4 from "../assets/zspcisownica-4.jpg";
 import Alert from "./Alert";
 import AlertRecruit from "./AlertRecruit";
+import AlertProcedure from "./AlertProcedure.jsx";
 
 function Hero() {
     const [open, setOpen] = useState(false);
     const [openRecruit, setOpenRecruit] = useState(false);
+    const [openProcedure, setOpenProcedure] = useState(false);
 
     function onShow() {
         setOpen(true);
@@ -27,6 +29,14 @@ function Hero() {
 
     function onCloseRecruit() {
         setOpenRecruit(false);
+    }
+
+    function onShowProcedure() {
+        setOpenProcedure(true);
+    }
+
+    function onCloseProcedure() {
+        setOpenProcedure(false);
     }
 
     return (
@@ -95,17 +105,27 @@ function Hero() {
                                 >
                                     Ogłoszenia
                                 </a>
-                                {/*<Link*/}
-                                {/*    to="/documents"*/}
-                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
-                                {/*>*/}
-                                {/*    Dokumenty*/}
-                                {/*</Link>*/}
+                                <Link
+                                    to="/documents"
+                                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                    Dokumenty
+                                </Link>
+                                {/* button show alertProceder */}
+                                <button
+                                    onClick={onShowProcedure}
+                                    type="button"
+                                    className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                    Procedura wydawania opinii
+                                </button>
+                                <AlertProcedure open={openProcedure} onClose={onCloseProcedure} />
+                                {/* end show alertProceder */}
                                 {/* button show alertRecruit */}
                                 {/*<button*/}
                                 {/*    onClick={onShowRecruit}*/}
                                 {/*    type="button"*/}
-                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
+                                {/*    className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
                                 {/*>*/}
                                 {/*    Rekrutacja Klasa 1*/}
                                 {/*</button>*/}
@@ -123,9 +143,9 @@ function Hero() {
                                 {/*<button*/}
                                 {/*    onClick={onShow}*/}
                                 {/*    type="button"*/}
-                                {/*    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
+                                {/*    className="rounded-md bg-teal-700 px-3.5 py-2.5 text-sm text-white shadow-sm uppercase hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"*/}
                                 {/*>*/}
-                                {/*    Harmonogram - przedszkola*/}
+                                {/*    Rekrutacja Przedszkola*/}
                                 {/*</button>*/}
                                 {/*<Alert open={open} onClose={onClose}/>*/}
                                 {/* end show alert */}
@@ -138,7 +158,7 @@ function Hero() {
                                     E-dziennik
                                 </a>
                                 <a
-                                    href="https://www.spcisownica.edu.pl/dokumenty/plan_lekcji2526.pdf"
+                                    href="https://www.spcisownica.edu.pl/dokumenty/plan_lekcji2627.pdf"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="rounded-md bg-white dark:bg-gray-800 px-3.5 py-2.5 uppercase text-sm font-semibold text-gray-800 dark:text-gray-100 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"

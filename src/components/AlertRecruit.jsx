@@ -5,20 +5,38 @@ const content = [
     {
         id: 1,
         activity:
-            "Przyjmowanie zgłoszeń",
-        date1: "od 10 marca 2025 r. do 21 marca 2025 r."
+            "Rozpoczęcie rekrutacji",
+        date1: "16 marca 2026 r."
     },
     {
         id: 2,
         activity:
-            "Podanie do publicznej wiadomości przez komisję rekrutacyjną listy kandydatów zakwalifikowanych do 1 klasy",
-        date1: "23 kwietnia 2025 r."
+            "Składanie wniosków",
+        date1: "do 27 marca 2026 r."
     },
     {
         id: 3,
         activity:
-            "Potwierdzenie przez rodzica kandydata woli przyjęcia",
-        date1: "od 24 kwietnia 2025 r. do 30 kwietnia 2025 r.",
+            "Weryfikacja wniosków",
+        date1: "od 16 marca 2026 r. do 31 marca 2026 r.",
+    },
+    {
+        id: 4,
+        activity:
+            "Publikacja listy kandydatów",
+        date1: "17 kwietnia 2026 r.",
+    },
+    {
+        id: 5,
+        activity:
+            "Potwierdzenie woli przyjęcia",
+        date1: "od 20 kwietnia 2026 r. do 24 kwietnia 2026 r.",
+    },
+    {
+        id: 6,
+        activity:
+            "Lista przyjetych oraz nieprzyjętych",
+        date1: "29 kwietnia 2026 r.",
     },
 ];
 
@@ -67,11 +85,19 @@ function AlertRecruit({open, onClose}) {
                                             Harmonogram rekrutacji do klasy 1 Szkoły Podstawowej w
                                             Cisownicy na rok szkolny 2025/2026
                                         </Dialog.Title>
-                                        <p className="py-2">Rozpoczynamy rekrutacja do klasy 1. Dokumenty do pobrania związane z rekrutacją:
+                                        <p className="py-2">Rusza rekrutacja do klasy pierwszej Szkoły Podstawowej w Cisownicy. Termin składania dokumentów od <strong>16 marca 2026 r.do 27 marca 2026 r</strong>. Dzieci zamieszkałe w obwodzie szkoły przyjmowane są na podstawie <b>zgłoszenia rodziców/prawnych opiekunów</b>.
+                                            Kandydaci zamieszkali poza obwodem szkoły obowiązuje rekrutacja zgodnie z zamieszczonymi poniżej dokumentami.
                                         <ul>
-                                            <li><a href="https://spcisownica.edu.pl/dokumenty/zgloszenie_obwod_2526.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">zgłoszenie dla ucznia z obwodu</a></li>
-                                            <li><a href="https://spcisownica.edu.pl/dokumenty/wniosek_spoza_obwod_2526.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">wniosek dla ucznia spoza obwodu</a></li>
-                                            <li><a href="https://spcisownica.edu.pl/dokumenty/regulamin_rekrutacji_szkola_26.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">regulamin rekrutacji dzieci do klasy pierwszej</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/zgloszenie_z_obwodu.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">zgłoszenie dla ucznia z obwodu (pdf)</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/zgloszenie_z_obwodu.docx" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">zgłoszenie dla ucznia z obwodu (docx)</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/wniosek_spoza_obwodu_do_kl1_2026_2027.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">wniosek dla ucznia spoza obwodu (pdf)</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/wniosek_spoza_obwodu_do_kl1_2026_2027.docx" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">wniosek dla ucznia spoza obwodu (docx)</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/regulamin_rekrutacji.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">regulamin rekrutacji dzieci do klasy pierwszej (pdf)</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/regulamin_rekrutacji.docx" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">regulamin rekrutacji dzieci do klasy pierwszej (docx)</a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/zarzadzenie_3_terminy_rekrutacji.pdf" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">ZARZĄDZENIE NR 04/03/2025 (pdf)
+                                            </a></li>
+                                            <li><a href="https://spcisownica.edu.pl/dokumenty/nabor26/zarzadzenie_3_terminy_rekrutacji.docx" target="_blank" rel="noreferrer" className="underline underline-offset-2 text-blue-700">ZARZĄDZENIE NR 04/03/2025 (docx)
+                                            </a></li>
                                         </ul>
                                         </p>
                                         {/* table */}

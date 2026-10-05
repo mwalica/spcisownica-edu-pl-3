@@ -94,6 +94,26 @@ function ProjectsPreschoolPage() {
                                 <p>Dokumenty do pobrania:</p>
                                 <ul>
                                     <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_czerwiec26_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - czerwiec 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_maj26_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - maj 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_kwiecien26_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - kwiecień 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_marzec26_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - marzec 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
+                                        href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_luty26_psz.pdf`}
+                                        target="_blank"
+                                        rel="noreferrer">Miesięczny harmonogram - luty 2026</a></li>
+                                    <li className='text-blue-700 text-lg hover:text-blue-500'><a
                                         href={`${import.meta.env.VITE_SITE_DOMAIN}/dokumenty/harmonogram_styczen26_psz.pdf`}
                                         target="_blank"
                                         rel="noreferrer">Miesięczny harmonogram - styczeń 2026</a></li>

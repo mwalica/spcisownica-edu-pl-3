@@ -27,13 +27,22 @@ function CounselParentsPage() {
                         {/* content */}
                         <div>
                             <h4 className="text-purple-500 font-medium text-2xl py-4">Członkowie zarządu Rady Rodziców działającej przy SP Cisownica</h4>
-                            <p className="pb-4">
+                            <p className="pb-2 font-semibold">
                                 Prezydium Rady Rodziców:</p>
-                            <ul className="flex flex-col space-y-4">
+                            <ul className="flex flex-col space-y-2">
                                 <li><strong>Piotr Waszek</strong> - przewodniczący</li>
-                                <li><strong>Katarzyna Wantulok</strong> - z-ca przewodniczącego</li>
+                                <li><strong>Patrycja Pinkas</strong> - z-ca przewodniczącego</li>
                                 <li><strong>Natalia Cieślar</strong> - sekretarz</li>
-                                <li><strong>Anna Wnętrzak</strong> - skarbnik</li>
+                                <li><strong>Jolanta Nowak</strong> - skarbnik</li>
+                                <li><strong>Łukasz Ochodek</strong></li>
+                                <li><strong>Łukasz Kosztur</strong></li>
+                            </ul>
+                            <p className="pt-6 pb-2 font-semibold">
+                                Komisja rewizyjna:</p>
+                            <ul className="flex flex-col space-y-2">
+                                <li><strong>Łukasz Mikołajczyk</strong></li>
+                                <li><strong>Weronika Plinta</strong></li>
+                                <li><strong>Karolina Konecka</strong></li>
                             </ul>
                         </div>
                     </div>
